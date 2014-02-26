@@ -1,6 +1,6 @@
 {
   "name": "ukkio-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Client tool to develop, test and (soon) publish your HTML5 game in Ukkio.",
   "bin": {
     "ukkio": "./bin/ukkio"
