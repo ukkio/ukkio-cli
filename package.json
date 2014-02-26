@@ -1,15 +1,29 @@
 {
   "name": "ukkio-cli",
-  "version": "0.0.1",
-  "description": "Ukkio client tool",
+  "version": "0.0.2",
+  "description": "Client tool to develop, test and (soon) publish your HTML5 game in Ukkio.",
   "bin": {
     "ukkio": "./bin/ukkio"
   },
   "scripts": {
     "test": "mocha --reporter spec"
   },
+  "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/ukkio/ukkio-cli.git"
+  },
+  "bugs" : {
+      "url" : "https://github.com/ukkio/ukkio-cli/issues"
+  },
   "author": "Ukkio",
-  "license": "MIT",
+  "keywords"      : ["ukkio", "tool", "client", "develop", "games", "html5", "publish" ],
+  "licenses" : [
+      {
+          "type" : "MIT",
+          "url" : "https://raw.github.com/ukkio/ukkio-cli/master/LICENSE"
+      }
+  ],
+
   "dependencies": {
     "commander": "~2.1.0",
     "moment": "~2.5.0",
