@@ -8,22 +8,29 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
-  "repository" : {
-      "type" : "git",
-      "url" : "https://github.com/ukkio/ukkio-cli.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ukkio/ukkio-cli.git"
   },
-  "bugs" : {
-      "url" : "https://github.com/ukkio/ukkio-cli/issues"
+  "bugs": {
+    "url": "https://github.com/ukkio/ukkio-cli/issues"
   },
   "author": "Ukkio",
-  "keywords"      : ["ukkio", "tool", "client", "develop", "games", "html5", "publish" ],
-  "licenses" : [
-      {
-          "type" : "MIT",
-          "url" : "https://raw.github.com/ukkio/ukkio-cli/master/LICENSE"
-      }
+  "keywords": [
+    "ukkio",
+    "tool",
+    "client",
+    "develop",
+    "games",
+    "html5",
+    "publish"
   ],
-
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/ukkio/ukkio-cli/master/LICENSE"
+    }
+  ],
   "dependencies": {
     "commander": "~2.1.0",
     "moment": "~2.5.0",
@@ -36,7 +43,8 @@
     "jade": "~1.0.1",
     "nedb": "~0.9.3",
     "underscore": "~1.5.2",
-    "async": "~0.2.10"
+    "async": "~0.2.10",
+    "debug": "~0.7.4"
   },
   "devDependencies": {
     "mocha": "~1.16.2",
