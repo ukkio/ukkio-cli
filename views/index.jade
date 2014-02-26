@@ -1,0 +1,68 @@
+
+extend layout
+
+block content
+
+	section.manifest
+		.artworks
+			.container
+				.artwork
+					if manifest.artworks && manifest.artworks['1024']
+						img(src=gameUrl+manifest.artworks['1024'], width="260", height="260")
+					else
+						img(src="/static/img/missing_artwork.png", width="260", height="260")
+					div 1024x1024px
+				.artwork
+					if manifest.artworks && manifest.artworks['512']
+						img(src=gameUrl+manifest.artworks['512'], width="180", height="180")
+					else
+						img(src="/static/img/missing_artwork.png", width="180", height="180")
+					div 512x512px
+				.artwork
+					if manifest.artworks && manifest.artworks['320']
+						img(src=gameUrl+manifest.artworks['320'], width="130", height="130")
+					else
+						img(src="/static/img/missing_artwork.png", width="130", height="130")
+					div 320x320px
+
+		.description
+			.container
+				.field.name
+					.label Name
+					.value= manifest.name
+				.field.author
+					.label Author
+					.value= manifest.author
+				.field.main
+					.label Main file
+					.value= manifest.main
+				.field.main
+					.label Path
+					.value= manifest.path
+				.field.devices
+					.label Supported devices
+					.value
+						table
+							tr
+								th Desktop
+								th Tablet
+								th Mobile
+							tr
+								td
+									if (manifest.devices && manifest.devices.indexOf('mobile') > -1)
+										i.icon-checked
+								td
+									if (manifest.devices && manifest.devices.indexOf('tablet') > -1)
+										i.icon-checked
+								td
+									if (manifest.devices && manifest.devices.indexOf('desktop') > -1)
+										i.icon-checked
+				.field.parentalControl
+					.label Parental control required
+					.value
+						if (manifest.parentalControl)
+							| Yes
+						else
+							| No
+
+

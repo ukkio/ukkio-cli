@@ -1,0 +1,12 @@
+{
+  "name": "foo-game",
+  "version": "0.0.1",
+  "author": "Ukkio cli test",
+  "main": "index.html",
+  "path": "test_game",
+  "artworks": {
+    "1024": "artwork_1024.png"
+  },
+  "devices": ["mobile", "tablet", "desktop"],
+  "parentalControl": true
+}

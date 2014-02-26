@@ -1,0 +1,220 @@
+@import "normalize.css";
+@import "fonts/open-sans/stylesheet.css";
+@import "fonts/ukkio-sandbox/stylesheet.css";
+
+
+/* ==========================================================================
+   Body and layout
+   ========================================================================== */
+html, body {
+	font-family: 'OpenSansRegular';
+	font-size: 12px;
+	background-color: white;
+}
+.container {
+	width: 720px;
+	margin: 0 auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background-color: rgba(35, 158, 215, 0.95);
+	color: white;
+	z-index: 100;
+}
+/* Logo */
+header .logo {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background: url(../img/logo.png) no-repeat left center;
+	background-size: 50px 50px;
+	line-height: 50px;
+	padding-left: 60px;
+}
+header .logo .ukkio, header .logo .sandbox {
+	font-size: 22px;
+}
+header .logo .ukkio {
+	margin-right: 0.3em;
+}
+header .logo .sandbox {
+	font-family: 'OpenSansLight';
+}
+/* Links */
+header .links {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 0 10px 10px;
+	overflow: auto;
+}
+header .links a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	line-height: 40px;
+	margin-right: 10px;
+	padding: 0 1em;
+	color: white;
+	border-radius: 3px;
+	border: 1px solid transparent;
+}
+header .links .play i {
+	font-size: 17px;
+	line-height: 40px;
+	vertical-align: middle;
+	margin-right: 0.5em;
+}
+header .links .play {
+	text-indent: 0.2em;
+}
+
+header .links a:hover {
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+header .links a:active {
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* ==========================================================================
+   Manifest - artworks
+   ========================================================================== */
+
+.manifest .description {
+	margin-top: 20px;
+}
+.manifest .field {
+	margin-bottom: 1em;
+}
+.manifest .field .label,
+.manifest .field .value {
+	font-size: 15px;
+}
+.manifest .field .label {
+	font-family: 'OpenSansBold';
+	margin-bottom: 2px;
+	color: #239ed7;
+	text-align: left;
+}
+.manifest .field .value {
+}
+/* Name */
+.manifest .field.name .value {
+	font-family: 'OpenSansLight';
+	font-size: 48px;
+}
+
+/* ==========================================================================
+   Artwork
+   ========================================================================== */
+.artworks {
+	background-color: rgba(35, 158, 215, 1);
+	padding-top: 70px;
+	padding-bottom: 10px;
+	color: white;
+	overflow: auto;
+}
+.artwork div {
+	color: white;
+	font-size: 12px;
+	vertical-align: bottom;
+	padding-right: 10px;
+	text-align: center;
+}
+.artworks .artwork {
+	float: left;
+	margin-right: 5px;
+}
+.artworks .artwork img {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Devices */
+.manifest .devices th,
+.manifest .devices td {
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 3px 7px;
+	font-size: 15px;
+	font-weight: normal;
+}
+.manifest .devices td i {
+	color: #239ed7;
+	font-size: 17px;
+}
+
+
+/* ==========================================================================
+   No manifest
+   ========================================================================== */
+.noManifest {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	padding-top: 100px;
+	background-color: rgba(35, 158, 215, 1);
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	font-family: monospace;
+}
+.noManifest i {
+	font-style: normal;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	border-radius: 3px;
+	padding: 0 0.2em;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ==========================================================================
+   Game iframe
+   ========================================================================== */
+iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+
+
+/* ==========================================================================
+   Media query
+   ========================================================================== */
+@media only screen and (max-width: 500px) {
+	
+	header .logo {
+		width: 50px;
+		height: 50px;
+	}
+	header .logo span {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+}
+
+
+
+
+

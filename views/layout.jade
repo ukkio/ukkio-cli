@@ -1,0 +1,23 @@
+doctype html5
+html
+	head
+		title Ukkio sandbox
+		meta(name="viewport", content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
+		link(rel="stylesheet", type="text/css", href="/static/css/style.css")
+
+	body
+		header
+			.container
+				.logo
+					span.ukkio Ukkio
+					span.sandbox Sandbox
+
+				.links
+					a(href="https://github.com/ukkio/ukkio-sdk", target="_blank") SDK
+					a.play(href="javascript:location.href='play'")
+						i.icon-play 
+						| Play game
+
+		block content

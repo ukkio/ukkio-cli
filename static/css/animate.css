@@ -1,0 +1,51 @@
+.animated{
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    animation-duration:1s;
+}
+.animated.hinge{
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    animation-duration:1s;
+}
+
+@-webkit-keyframes colorPulse {
+    0% { background-color: transparent; color: white; }
+    50% { background-color: white; color: #239ed7; }
+    100% { background-color: transparent; color: white; }
+}
+@-moz-keyframes colorPulse {
+    0% { -moz-transform: scale(1); }
+    50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes colorPulse {
+    0% { -o-transform: scale(1); }  
+    50% { -o-transform: scale(1.1); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes colorPulse {
+    0% { background-color: transparent; color: white; }
+    50% { background-color: white; color: #239ed7; }
+    100% { background-color: transparent; color: white; }
+}
+
+.colorPulse {
+    -webkit-animation-name: colorPulse;
+    -moz-animation-name: colorPulse;
+    -o-animation-name: colorPulse;
+    animation-name: colorPulse;
+    -webkit-animation-iteration-count: 3;
+    -moz-animation-iteration-count: 3;
+    -o-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+}

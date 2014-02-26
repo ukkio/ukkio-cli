@@ -1,0 +1,55 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var colors = require('colors');
+var packageJson = require('../package.json');
+var cli = require('../index');
+
+
+// Color theme
+colors.setTheme({
+	silly: 'rainbow',
+	input: 'grey',
+	verbose: 'cyan',
+	prompt: 'grey',
+	info: 'green',
+	data: 'grey',
+	help: 'grey',
+	warn: 'yellow',
+	debug: 'blue',
+	error: 'red',
+	default: 'cyan'
+});
+
+
+// Program
+program.version(packageJson.version);
+
+// Init command
+program
+	.command('init')
+	.description('Initialize your game to be an Ukkio project')
+	.action(cli.init);
+
+// Deploy
+/* Disabled
+program
+	.command('deploy')
+	.description('Deploy game in the correct')
+	.option('-d, --dir <directory>', 'Directory containing ukkio.json')
+	.action(cli.deploy);
+*/
+
+// Sandbox
+program
+	.command('sandbox')
+	.description('Sandbox commands')
+	.option('-d, --dir <directory>', 'directory containing ukkio.json')
+	.option('-p, --port <port>', 'port for webserver to be used (default 5005, 5006)')
+	.option('-v, --verbose', 'show logs')
+	.action(cli.sandbox);
+
+
+program.parse(process.argv);
+
+

@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": "/private/var/www/uk.io-cli"
+		},
+		{
+			"path": "/private/var/www/uk.io-developer"
+		},
+		{
+			"path": "/private/var/www/dtmb"
+		},
+		{
+			"path": "/private/var/www/ukkio-sdk"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "ukkio-cli",
+  "version": "0.0.1",
+  "description": "Ukkio client tool",
+  "bin": {
+    "ukkio": "./bin/ukkio"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "author": "Ukkio",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "~2.1.0",
+    "moment": "~2.5.0",
+    "colors": "~0.6.2",
+    "promptly": "~0.2.0",
+    "request": "~2.30.0",
+    "archiver": "~0.4.10",
+    "tmp": "0.0.23",
+    "express": "~3.4.7",
+    "jade": "~1.0.1",
+    "nedb": "~0.9.3",
+    "underscore": "~1.5.2",
+    "async": "~0.2.10"
+  },
+  "devDependencies": {
+    "mocha": "~1.16.2",
+    "chai": "~1.8.1",
+    "formidable": "~1.0.14"
+  }
+}
