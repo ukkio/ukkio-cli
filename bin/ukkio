@@ -25,6 +25,7 @@ colors.setTheme({
 // Program
 program.version(packageJson.version);
 
+
 // Init command
 program
 	.command('init')
@@ -50,6 +51,17 @@ program
 	.action(cli.sandbox);
 
 
+// Any command
+program
+   .command('*')
+   .description('Ukkio-cli commands')
+   .action(function(){
+     	console.log("Command doesn't exist.");
+     	program.help();
+   });
+
+
+
 program.parse(process.argv);
 
-
+if (!program.args.length) program.help();
