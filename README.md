@@ -1,4 +1,3 @@
-
 # Ukkio CLI
 
 Client tool to develop, test and (soon) publish your HTML5 game in [Ukkio](http://developer.ukk.io). 
@@ -55,7 +54,7 @@ Ukkio.json:
   resized version of the 1024 image.
 
 	```js
-	artowrk: {
+	artworks: {
 		"1024": "build/artwork_1024.png",
 		"512": "build/artwork_512.png"
 		"320": "build/artwork_320.png"
